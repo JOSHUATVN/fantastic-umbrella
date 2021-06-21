@@ -39,7 +39,7 @@ router.get("/:id", (req, res) => {
   })
     .then((databaseCategory) => {
       if (!databaseCategory) {
-        res.status(404).json({ message: "id not recognized for categorys" });
+        res.status(404).json({ message: 'NOT FOUND' });
         return;
       }
       res.json(databaseCategory);
@@ -86,7 +86,7 @@ router.delete("/:id", (req, res) => {
     .then((databaseCategory) => {
       if (!databaseCategory) {
         res.status(404).json({
-          message: "id not recognized for categorys",
+          message: 'NOT FOUND',
         });
         return;
       }
