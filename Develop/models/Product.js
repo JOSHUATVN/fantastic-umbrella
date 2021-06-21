@@ -26,7 +26,7 @@ Product.init(
         decimal:true,
       }
     },
-    categoryId: {
+    categor_id: {
       type: DataTypes.INTEGER,
       references: {
         model: "category",
